@@ -1,0 +1,30 @@
+<ion-content>
+  <ion-app>
+    <div id="container">
+      <img src="../../assets/images/logo/logo.png">
+      <div id="formContainer">
+        <form (ngSubmit)="login()">
+          <ul class="loginForm">
+            <li>
+              <label for="username">
+                <ion-icon name="mail-outline"></ion-icon>
+              </label>
+              <input type="text" required placeholder="Email Address" name="username" [value]="username"
+                [(ngModel)]="username" [ngModelOptions]="{standalone: true}" id="username">
+            </li>
+            <li>
+              <label for="password">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </label>
+              <input type="password" required placeholder="Your Password" name="password" [value]="password"
+                [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="password">
+            </li>
+          </ul>
+          <button type="submit">Login</button>
+        </form>
+        <h5>Forgot password? <a routerLink="/recover">Recover here</a></h5>
+      </div>
+      <h5 id="signUp">Don't yet have an account? <a routerLink="/signup">Register here</a></h5>
+    </div>
+  </ion-app>
+</ion-content>

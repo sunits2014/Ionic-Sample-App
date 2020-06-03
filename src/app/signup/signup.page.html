@@ -1,0 +1,53 @@
+<ion-content>
+  <ion-app>
+    <div id="container">
+      <img src="../../assets/images/logo/logo.png">
+      <div id="formContainer">
+        <form (ngSubmit)="register()">
+          <ul class="loginForm">
+            <li>
+              <label for="name">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </label>
+              <input required autocomplete="off" type="text" name="fullName" [value]="fullName" [(ngModel)]="fullName"
+                [ngModelOptions]="{standalone: true}" placeholder="Full Name" id="name">
+            </li>
+            <li>
+              <label for="username">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </label>
+              <input required autocomplete="off" type="text" name="username" [value]="username" [(ngModel)]="username"
+                [ngModelOptions]="{standalone: true}" placeholder="Desired Username" id="username">
+            </li>
+            <li>
+              <label for="emailAddress">
+                <ion-icon name="mail-outline"></ion-icon>
+              </label>
+              <input required autocomplete="off" type="email" name="emailAddress" [value]="emailAddress"
+                [(ngModel)]="emailAddress" [ngModelOptions]="{standalone: true}" placeholder="Email Address"
+                id="emailAddress">
+            </li>
+            <li>
+              <label for="password">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+              </label>
+              <input required autocomplete="off" type="password" name="userpassword" [value]="userpassword"
+                [(ngModel)]="userpassword" [ngModelOptions]="{standalone: true}" placeholder="Password" id="password">
+            </li>
+            <li>
+              <label for="mobileNumber">
+                <ion-icon name="call-outline"></ion-icon>
+              </label>
+              <input maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')"
+                required autocomplete="off" type="text" name="contactNumber" [value]="contactNumber"
+                [(ngModel)]="contactNumber" [ngModelOptions]="{standalone: true}" placeholder="Contact Number"
+                id="mobileNumber">
+            </li>
+          </ul>
+          <button type="submit">Register</button>
+        </form>
+        <a routerLink="/">Back to Login</a>
+      </div>
+    </div>
+  </ion-app>
+</ion-content>

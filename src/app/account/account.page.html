@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Account Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="userContent">
+    <ion-avatar>
+      <ion-fab vertical="bottom" horizontal="end">
+        <ion-fab-button>
+          <ion-icon name="camera-reverse" (click)="showPopOver($event)"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <img src="{{user.imageFilePath}}">
+    </ion-avatar>
+  </div>
+</ion-content>

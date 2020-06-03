@@ -1,0 +1,28 @@
+ion-title {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+ion-title div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ion-title div img {
+  width: 50%;
+}
+
+ion-avatar {
+  height: 38px;
+  width: 38px;
+  margin-right: 0.5rem;
+}
+
+ion-icon {
+  color: #08c79c;
+}
+
+ion-label {
+  color: #243686 !important;
+}

@@ -1,0 +1,23 @@
+{
+  "users": [{
+    "fullName": "Sunit Sinha",
+    "emailAddress": "sunit.sinha@icloud.com",
+    "contactNumber": "7022209655",
+    "userPassword": "sunit123",
+    "imageFilePath": "images/userImages/sunit.jpg",
+    "userName": "sunit2020"
+  }, {
+    "fullName": "Super Dude",
+    "emailAddress": "superdude@gmail.com",
+    "contactNumber": "9127498201",
+    "userPassword": "superdude",
+    "imageFilePath": "",
+    "userName": "super2020"
+  }, {
+    "fullName": "Pritish Sinha",
+    "emailAddress": "sinha.pritish2373@gmail.com",
+    "contactNumber": "8399931258",
+    "userPassword": "pritish123",
+    "userName": "pritish"
+  }]
+}

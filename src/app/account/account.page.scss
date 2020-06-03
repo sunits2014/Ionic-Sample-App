@@ -1,0 +1,38 @@
+#userContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+}
+
+ion-avatar {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+ion-avatar img {
+  border-radius: 100%;
+  // padding: 0.5rem;
+  box-shadow: 0 0 15px 0px #ccc;
+  z-index: 0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#camera {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 0%;
+  right: 10%;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px 0 #ccc;
+}

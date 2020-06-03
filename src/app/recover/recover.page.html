@@ -1,0 +1,20 @@
+<ion-content>
+  <ion-app>
+    <div id="container">
+      <img src="../../assets/images/logo/logo.png">
+      <div id="formContainer">
+        <ul class="loginForm">
+          <li>
+            <label for="email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </label>
+            <input type="email" placeholder="Email Address" id="email" name="emailAddress" [value]="emailAddress"
+              [(ngModel)]="emailAddress">
+          </li>
+        </ul>
+        <button type="button" (click)="retreivePassword()">Retreive Password</button>
+        <a routerLink="/">Back to Login</a>
+      </div>
+    </div>
+  </ion-app>
+</ion-content>
